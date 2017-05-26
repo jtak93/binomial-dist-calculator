@@ -2,6 +2,7 @@
   "name": "binomial-dist-calculator",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jtak93.github.io/binomial-dist-calculator",
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
@@ -49,7 +50,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "deploy": "npm run build&&gh-pages -d build"
   },
   "jest": {
     "collectCoverageFrom": [
