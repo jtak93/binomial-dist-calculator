@@ -2,7 +2,7 @@ import React, { PropTypes, Component } from 'react';
 import logo from './logo.svg';
 import './style.css';
 
-function factorial(num) {
+export function factorial(num) {
   if (num === 0) return 1;
   return num * factorial(num - 1);
 }
@@ -24,7 +24,6 @@ class App extends Component {
     this.calculate = this.calculate.bind(this);
   }
   handleNChange(event) {
-    console.log(event)
     this.setState({n: Number(event.target.value)});
   }
 
@@ -66,7 +65,6 @@ class App extends Component {
 
 
   render() {
-    console.log(this.state)
     return (
       <div className="App">
         <div className="App-header">
